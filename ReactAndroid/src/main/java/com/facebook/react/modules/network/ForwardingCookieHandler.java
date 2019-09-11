@@ -159,9 +159,6 @@ public class ForwardingCookieHandler extends CookieHandler {
   private CookieManager getCookieManager() {
     if (mCookieManager == null) {
       possiblyWorkaroundSyncManager(mContext);
-<<<<<<< HEAD
-      mCookieManager = CookieManager.getInstance();
-=======
       try {
           mCookieManager = CookieManager.getInstance();
       } catch (IllegalArgumentException ex) {
@@ -179,7 +176,6 @@ public class ForwardingCookieHandler extends CookieHandler {
           throw exception;
         }
       }
->>>>>>> 954f715b25... Adds Logic To Catch MissingWebViewPackageException (#24533)
 
       if (USES_LEGACY_STORE) {
         mCookieManager.removeExpiredCookie();
