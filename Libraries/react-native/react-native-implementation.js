@@ -172,9 +172,6 @@ const ReactNative = {
   get VirtualizedList() {
     return require('VirtualizedList');
   },
-  get WebView() {
-    return require('WebView');
-  },
 
   // APIs
   get ActionSheetIOS() {
